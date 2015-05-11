@@ -1,0 +1,15 @@
+{
+  "name": "initialsjs",
+  "version": "1.0.0",
+  "description": "simple jquery-plugin for create nice initials from given name",
+  "main": "initials.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery"
+  ],
+  "author": "Alexander Vetter",
+  "license": "MIT"
+}

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Initials</title>
+
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div class="initials">Günter Abel</div>
+<div class="initials">Erich Adickes</div>
+<div class="initials">Theodor Adorno</div>
+<div class="initials">Hans Albert</div>
+<div class="initials">Johannes Althusius</div>
+<div class="initials">Günther Anders</div>
+<div class="initials">Karl Apel</div>
+<div class="initials">Ernst Apelt</div>
+<div class="initials">Hannah Arendt</div>
+
+<script type="text/JavaScript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+<script type="text/JavaScript" src="initials.js"></script>
+<script type="text/JavaScript">
+    var nameShortener = function(name) {
+        var nameSplitted = name.split(' ');
+
+        var first = nameSplitted[0].charAt(0).toUpperCase();
+        var second = nameSplitted[1].charAt(0).toUpperCase();
+
+        return first + second;
+    };
+
+
+    $('.initials').each(function () {
+        $(this).initials(nameShortener);
+    })
+</script>
+</body>
+</html>
